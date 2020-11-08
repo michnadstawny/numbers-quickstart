@@ -4,59 +4,25 @@ namespace NumbersInCSharp
 {
     class Program
     {
-        static void WorkingWithIntegers()
+        static void WorkWithDoubles()
         {
-            int a = 18;
-            int b = 6;
-
-            // addition
-            int c = a + b;
-            Console.WriteLine(c);
-
-            // subtraction
-            c = a - b;
-            Console.WriteLine(c);
-
-            // multiplication
-            c = a * b;
-            Console.WriteLine(c);
-
-            // division
-            c = a / b;
-            Console.WriteLine(c);
-        }
-
-        static void OrderPrecedence()
-        {
-            int a = 5;
-            int b = 4;
-            int c = 2;
-            int d = a + b * c;
-            Console.WriteLine(d);
-
-            d = (a + b) * c;
-            Console.WriteLine(d);
-
-            d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
-            Console.WriteLine(d);
-
-            int e = 7;
-            int f = 4;
-            int g = 3;
-            int h = (e  + f) / g;
-            Console.WriteLine(h);
+            double a = 5;
+            double b = 4;
+            double c = 2;
+            double d = 100;
+            double e = 19;
+            double f = 23;
+            double g = 8;
+            double h = 144;
+            double wynik1 = d / a + (b * c) - (e - f) * (h - g);
+            double wynik2 = g * (d * f / c) - a * (b + e) - h;
+            Console.WriteLine(wynik1);
+            Console.WriteLine(wynik2);
         }
 
         static void Main(string[] args)
         {
-            WorkingWithIntegers();
-
-            OrderPrecedence();
-
-            int max = int.MaxValue;
-            int min = int.MinValue;
-            Console.WriteLine($"The range of integers is {min} to {max}");
-
+            WorkWithDoubles();
         }
     }
 }
